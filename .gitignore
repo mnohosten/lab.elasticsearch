@@ -2,3 +2,5 @@ vendor/
 .phpunit.result.cache
 composer.phar
 html/node_modules/*
+storage/api.storage/products.json
+.idea
