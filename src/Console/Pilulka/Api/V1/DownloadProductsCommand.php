@@ -37,9 +37,6 @@ class DownloadProductsCommand extends Command
 
     public function execute(InputInterface $input, OutputInterface $output)
     {
-        // api iterator
-        //
-        //
         $client = $this->getClient();
         $i = 0;
         $limit = 500;
