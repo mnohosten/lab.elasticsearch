@@ -1,0 +1,15 @@
+imports:
+  - { resource: 'vendor/symplify/easy-coding-standard/config/clean-code.yml' }
+  - { resource: 'vendor/symplify/easy-coding-standard/config/psr2.yml' }
+
+services:
+  ObjectCalisthenics\Sniffs\Files\ClassTraitAndInterfaceLengthSniff: ~
+  ObjectCalisthenics\Sniffs\Files\FunctionLengthSniff: ~
+  ObjectCalisthenics\Sniffs\Metrics\MethodPerClassLimitSniff: ~
+  ObjectCalisthenics\Sniffs\Metrics\PropertyPerClassLimitSniff: ~
+  ObjectCalisthenics\Sniffs\Classes\ForbiddenPublicPropertySniff: ~
+  ObjectCalisthenics\Sniffs\NamingConventions\NoSetterSniff: ~
+  ObjectCalisthenics\Sniffs\NamingConventions\ElementNameMinimalLengthSniff: ~
+  ObjectCalisthenics\Sniffs\ControlStructures\NoElseSniff: ~
+  ObjectCalisthenics\Sniffs\CodeAnalysis\OneObjectOperatorPerLineSniff: ~
+  ObjectCalisthenics\Sniffs\Metrics\MaxNestingLevelSniff: ~

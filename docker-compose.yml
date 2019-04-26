@@ -47,6 +47,27 @@ services:
     networks:
       - esnet
 
+  php:
+    image: krizius/pilulka-php-apache
+    volumes:
+      - .:/var/www
+    environment:
+      XDEBUG_CONFIG: 'remote_enable=0'
+    ports:
+      - 26666:80
+    networks:
+      - esnet
+
+  swagger_mock:
+    image: swaggermock/swagger-mock
+    environment:
+      SWAGGER_MOCK_SPECIFICATION_URL: /app/documentation/pets.yaml
+    ports:
+      - "25555:8080"
+    volumes:
+      - ./docker/swagger:/app/documentation
+    networks:
+      - esnet
 
 networks:
   esnet:
