@@ -74,7 +74,6 @@ class DownloadProductsCommand extends Command
                         }
                     }
                 }
-                break;
             }
             if($hasEmptyResponse) break;
         }

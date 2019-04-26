@@ -2,62 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1bff7366-96e4-4122-8f82-30c5704900cd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/lab.elasticsearch.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php-docker-settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/check-build.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/config.example.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/console.commands.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/providers.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/routes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/console.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/swagger/pets.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ecs.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/.babelrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/_javascript/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/_sass/main.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/bulma-start.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/lib/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/made-with-bulma.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/atarphp/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/phpunit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/templates/common/dashboard.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/templates/common/features.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/templates/common/pricing.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/templates/layout.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/templates/user/logIn.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/templates/user/signUp.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/translation/cs_CZ.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/translation/en_US.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Config.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Console/Application.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Console/Pilulka/Api/V1/DownloadProductsCommand.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Provider/CoreServicesProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Provider/Psr7Provider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Provider/TemplateProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Web/Common/Action/ViewDashboardAction.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/api.storage/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/api.storage/products.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/cache/template/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/cache/translator/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Console/Pilulka/Api/V1/DownloadProductsCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Console/Pilulka/Api/V1/DownloadProductsCommand.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +24,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/config.example.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
@@ -97,11 +42,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Console/Pilulka/Api/V1/DownloadProductsCommand.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="68" column="38" selection-start-line="68" selection-start-column="38" selection-end-line="68" selection-end-column="38" />
+            <state relative-caret-position="463">
+              <caret line="75" column="17" selection-start-line="75" selection-start-column="17" selection-end-line="75" selection-end-column="17" />
               <folding>
                 <element signature="e#93#115#0#PHP" expanded="true" />
               </folding>
@@ -141,10 +86,10 @@
         <option value="$PROJECT_DIR$/console.php" />
         <option value="$PROJECT_DIR$/src/Console/Pilulka/Api/V1/DownloadProducts.php" />
         <option value="$PROJECT_DIR$/config/config.production.php" />
-        <option value="$PROJECT_DIR$/src/Console/Pilulka/Api/V1/DownloadProductsCommand.php" />
         <option value="$PROJECT_DIR$/storage/api.storage/.gitignore" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/config/config.example.php" />
+        <option value="$PROJECT_DIR$/src/Console/Pilulka/Api/V1/DownloadProductsCommand.php" />
       </list>
     </option>
   </component>
@@ -250,18 +195,18 @@
       <updated>1555587437038</updated>
       <workItem from="1555587438110" duration="5035000" />
       <workItem from="1555924478030" duration="614000" />
-      <workItem from="1556265238200" duration="13454000" />
+      <workItem from="1556265238200" duration="13483000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19103000" />
+    <option name="totallyTimeSpent" value="19132000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2560" y="31" width="2560" height="1049" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25377283" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25377283" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -274,7 +219,7 @@
       <window_info anchor="bottom" id="Docker" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3278867" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3278867" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -447,16 +392,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Console/Pilulka/Api/V1/DownloadProductsCommand.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="68" column="38" selection-start-line="68" selection-start-column="38" selection-end-line="68" selection-end-column="38" />
-          <folding>
-            <element signature="e#93#115#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -485,6 +420,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Console/Pilulka/Api/V1/DownloadProductsCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="75" column="17" selection-start-line="75" selection-start-column="17" selection-end-line="75" selection-end-column="17" />
+          <folding>
+            <element signature="e#93#115#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
