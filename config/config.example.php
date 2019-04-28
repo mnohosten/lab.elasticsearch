@@ -14,4 +14,8 @@ return [
     'console.commands' => require __DIR__ . '/console.commands.php',
 
     'pilulka.api.v1.storage_path' => __DIR__ . '/../storage/api.storage',
+    'pilulka.api.v1.base_uri' => 'http://ipilulka.cz',
+    'pilulka.api.v1.username' => 'pdp',
+    'pilulka.api.v1.password' => 'a8b4Cjk$~',
+    'pilulka.main_pharmacy_id' => 34,
 ];

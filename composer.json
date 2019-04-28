@@ -6,18 +6,13 @@
       "Pilulka\\Lab\\Elasticsearch\\": "src/"
     }
   },
-  "repositories": [
-    {
-      "type": "path",
-      "url": "packages/atarphp/skeleton"
-    }
-  ],
   "require": {
     "twig/twig": "^2.7",
-    "atar/skeleton": "dev-master",
     "symfony/translation": "^4.2",
     "symfony/console": "^4.2",
-    "guzzlehttp/guzzle": "^6.3"
+    "guzzlehttp/guzzle": "^6.3",
+    "atar/skeleton": "dev-master",
+    "lambdish/phunctional": "^1.0"
   },
   "require-dev": {
     "phpunit/phpunit": "^6.0|^7.0",

@@ -61,11 +61,11 @@ services:
   swagger_mock:
     image: swaggermock/swagger-mock
     environment:
-      SWAGGER_MOCK_SPECIFICATION_URL: /app/documentation/pets.yaml
+      SWAGGER_MOCK_SPECIFICATION_URL: /app/documentation/specification.yml
     ports:
       - "25555:8080"
     volumes:
-      - ./docker/swagger:/app/documentation
+      - ./resources/documentation/api:/app/documentation
     networks:
       - esnet
 
