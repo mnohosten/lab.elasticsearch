@@ -1,6 +1,6 @@
 # Vyhledavani v produktovem katalogu
 
-`GET /pilulka_cz/product/_search`
+`GET /product/_search`
 ```json
 {
   "query": {

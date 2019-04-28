@@ -17,6 +17,9 @@ use Symfony\Component\Console\Output\OutputInterface;
 
 class DownloadProductsCommand extends Command
 {
+
+    use PilulkaApiTrait;
+
     /**
      * @var Config
      */
@@ -62,11 +65,11 @@ class DownloadProductsCommand extends Command
                             $hasEmptyResponse = true;
                         }
                         foreach ($products as $product) {
-                            $output->writeln("Processed {$product['name']}, pdk: {$product['pdk']}");
+                            $output->writeln("Processed {$product['name']}");
                             fputs($file, json_encode([
                                     'index' => [
-                                        '_index' => $this->config->get('elasticsearch.index'),
-                                        '_type' => $this->config->get('elasticsearch.type.product'),
+                                        '_index' => 'product',
+                                        '_type' => 'product',
                                         '_id' => $product['id'],
                                     ]
                                 ]) . "\n");
@@ -78,21 +81,6 @@ class DownloadProductsCommand extends Command
             if ($hasEmptyResponse) break;
         }
         fclose($file);
-    }
-
-    /**
-     * @return Client
-     */
-    private function getClient(): Client
-    {
-        $client = new Client([
-            'base_uri' => $this->config->get('pilulka.api.v1.base_uri'),
-            'auth' => [
-                $this->config->get('pilulka.api.v1.username'),
-                $this->config->get('pilulka.api.v1.password'),
-            ],
-        ]);
-        return $client;
     }
 
     /**

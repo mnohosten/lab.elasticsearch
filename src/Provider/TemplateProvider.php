@@ -7,12 +7,16 @@ use Atar\Web\LinkGenerator;
 use League\Container\Container;
 use League\Container\ServiceProvider\AbstractServiceProvider;
 use Pilulka\Lab\Elasticsearch\Config;
+use Pilulka\Lab\Elasticsearch\Web\Component;
+use Pilulka\Lab\Elasticsearch\Web\ComponentLoader;
 use Symfony\Component\Translation\Loader\PhpFileLoader;
 use Symfony\Component\Translation\Translator;
 use Symfony\Contracts\Translation\TranslatorInterface;
 use Twig\Environment;
 use Twig\Loader\FilesystemLoader;
 use Twig\TwigFilter;
+use Twig\TwigFunction;
+use Webmozart\Assert\Assert;
 
 /**
  * Class TemplateProvider
@@ -23,7 +27,8 @@ class TemplateProvider extends AbstractServiceProvider
 {
     protected $provides = [
         Environment::class,
-        TranslatorInterface::class
+        TranslatorInterface::class,
+        ComponentLoader::class,
     ];
     /**
      * @var Config
@@ -43,6 +48,15 @@ class TemplateProvider extends AbstractServiceProvider
 
     public function register()
     {
+        $this->container->share(
+            ComponentLoader::class,
+            function () {
+                return new ComponentLoader(
+                    $this->container,
+                    $this->config->get('component.map')
+                );
+            }
+        );
         $this->container->share(
             TranslatorInterface::class,
             function () {
@@ -93,11 +107,25 @@ class TemplateProvider extends AbstractServiceProvider
                 /** @var LinkGenerator $linkGenerator */
                 $linkGenerator = $this->container->get(LinkGenerator::class);
                 $twig->addFilter(
-                    new TwigFilter('link', function ($key, $params=[]) use ($linkGenerator) {
+                    new TwigFilter('link', function ($key, $params = []) use ($linkGenerator) {
                         return $linkGenerator->generate($key, $params);
                     })
                 );
-
+                $twig->addFilter(
+                    new TwigFilter('price', function ($price)  {
+                        return "$price Kč";
+                    })
+                );
+                /** @var ComponentLoader $componentLoader */
+                $componentLoader = $this->container->get(ComponentLoader::class);
+                $twig->addFunction(new TwigFunction(
+                    'component',
+                    function (string $name, array $args = []) use ($componentLoader) {
+                        /** @var Component $component */
+                        $component = $componentLoader->get($name);
+                        Assert::isInstanceOf($component, Component::class);
+                        echo $component->render($args);
+                    }));
                 return $twig;
             }
         );

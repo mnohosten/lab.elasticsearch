@@ -29,6 +29,7 @@ class ViewDashboardAction implements Action
 
     public function __invoke(RequestInterface $request, VariableCollection $variables): ResponseInterface
     {
+        return new Response\HtmlResponse($this->twig->render('common/dashboard.twig', []));
         return new Response\HtmlResponse(new CallbackStream(function() {
             echo $this->twig->render('common/dashboard.twig', []);
         }));
