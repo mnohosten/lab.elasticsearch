@@ -22,10 +22,6 @@ class DownloadProductsCommand extends Command
      */
     private $config;
 
-
-    /**
-     * DownloadProductsCommand constructor.
-     */
     public function __construct(Config $config)
     {
         $this->config = $config;
@@ -69,8 +65,8 @@ class DownloadProductsCommand extends Command
                             $output->writeln("Processed {$product['name']}, pdk: {$product['pdk']}");
                             fputs($file, json_encode([
                                     'index' => [
-                                        '_index' => 'pilulka',
-                                        '_type' => 'products',
+                                        '_index' => $this->config->get('elasticsearch.index'),
+                                        '_type' => $this->config->get('elasticsearch.type.product'),
                                         '_id' => $product['id'],
                                     ]
                                 ]) . "\n");

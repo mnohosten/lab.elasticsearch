@@ -18,4 +18,7 @@ return [
     'pilulka.api.v1.username' => 'pdp',
     'pilulka.api.v1.password' => 'a8b4Cjk$~',
     'pilulka.main_pharmacy_id' => 34,
+
+    'elasticsearch.index' => 'pilulka_cz',
+    'elasticsearch.type.product' => 'product',
 ];
